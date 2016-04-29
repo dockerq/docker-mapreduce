@@ -1,0 +1,5 @@
+mapred:
+    image: daocloud.io/adolphlwq/docker-mapreduce:master-init
+    net: host
+    privileged: true
+    container_name: mapred-framework

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+	  <name>mapred.job.tracker</name>
+	  <value>192.168.10.132:9001</value>
+	</property>
+	<property>
+	  <name>mapred.jobtracker.taskScheduler</name>
+	  <value>org.apache.hadoop.mapred.MesosScheduler</value>
+	</property>
+	<property>
+	  <name>mapred.mesos.taskScheduler</name>
+	  <value>org.apache.hadoop.mapred.JobQueueTaskScheduler</value>
+	</property>
+	<property>
+	  <name>mapred.mesos.master</name>
+	  <value>192.168.10.130:5050</value>
+	</property>
+	<property>
+	  <name>mapred.mesos.executor.uri</name>
+	  <value>hdfs://192.168.10.132:9000/common/hadoop-2.5.0-cdh5.2.0.tar.gz</value>
+	</property>
+</configuration>
